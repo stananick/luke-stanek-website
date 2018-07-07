@@ -3,7 +3,6 @@ var sass = require('gulp-sass');
 var del = require('del');
 var runSequence = require('run-sequence');
 var cleanCSS = require('gulp-clean-css');
-var injectPartials = require('gulp-inject-partials');
 var browserSync = require('browser-sync').create();
 
 //compiling sass
@@ -46,13 +45,6 @@ gulp.task('move', function() {
     .pipe(gulp.dest('dist/json'));
   gulp.src('app/pdf/*')
     .pipe(gulp.dest('dist/pdf'));
-});
-
-//injecting partials
-gulp.task('inject', function () {
-  return gulp.src('app/*.html')
-    .pipe(injectPartials())
-    .pipe(gulp.dest('./app'));
 });
 
 gulp.task('clean:dist', function() {

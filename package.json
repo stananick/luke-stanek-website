@@ -13,7 +13,6 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
-    "gulp-inject-partials": "^1.0.4",
     "gulp-sass": "^2.3.2",
     "run-sequence": "^2.2.1"
   }
