@@ -1,0 +1,11 @@
+@mixin breakpoint-medium {
+  @media only screen and (min-width: 48rem) {
+    @content
+  }
+};
+
+@mixin breakpoint-large {
+  @media only screen and (min-width: 60rem) {
+    @content
+  }
+};
