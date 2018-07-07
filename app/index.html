@@ -8,21 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" rel="stylesheet" media="all">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
 </head>
 <body>
 
   <header role="banner">
     <section class="header">
-      <section class="heading">
-        <h1 class="heading__title"><a href="#">Lucas J. Stanek</a></h1>
-      </section>
+      <h1 class="header__title"><a href="#">Lucas J. Stanek <span>PhD Student, CMSE</span></a></h1>
 
       <!-- TODO: make sticky -->
       <nav id="menu" role="navigation">
         <ul class="nav">
-          <li><a href="/">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#research">Research</a></li>
-          <!-- TODO: inline CV -->
+          <!-- TODO: Inline CV -->
           <li><a href="#cv">CV</a></li>
         </ul>
       </nav>
@@ -31,7 +30,7 @@
 
   <main role="main">
 
-  <section class="overview">
+  <section class="section overview">
     <img class="overview__image" src="img/luke-stanek.jpg" alt="Headshot of Lucas Stanek">
 
     <p>I am currently a PhD student in the <a href="https://cmse.msu.edu">Department of Computational, Mathematics, Science, and Engineering</a> at Michigan State University. I am a research assistant in <a href="http://www.the-christlieb-group.org">Dr. Andrew Christlieb's laboratory</a> and my focus is in algorithm development and solving problems related to plasma physics computationally.</p>
@@ -41,7 +40,7 @@
     <p>Some of my interests include: playing guitar, Cleveland Indians baseball, and camping/hiking. I also have a passion for teaching and helping students. I have taught many classes both at The University of Akron and MSU.</p>
   </section>
 
-  <section id="research">
+  <section class="section" id="research">
     <!-- <h2>Papers</h2> -->
     <!-- <h2>Talks</h2> -->
     <h2>Posters</h2>
@@ -79,8 +78,12 @@
       <p>Deformation of a Graphene Sheet Driven by Lattice Mismatch with a Supporting Substrate, The University of Akron, Spring 2017</p>
       <p>Description: Deformation of a chain of bonded particles interacting with a chain of particles on a rigid substrate via van der Waals interactions was studied via simulation. An equilibrium configuration of the system given an initial condition was found by means of gradient flow dynamics. This energy-based model provided insight on out-of-plane deformations and connections were made to lattice-constants and model parameters governing the strength of the force terms.</p>
     </section>
+  </section>
 
+  <section class="section" id="cv">
     <a href="pdf/lucas-stanek-cv.pdf">Download CV</a>
+
+    <!-- TODO: Inline CV -->
   </section>
 
 </main>
