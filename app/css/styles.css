@@ -38,6 +38,22 @@ ul {
     border-radius: 10rem;
     margin-bottom: 1.5rem; }
 
+.research__item__dropdown-title {
+  text-decoration: underline;
+  color: #4392A3; }
+  .research__item__dropdown-title:hover {
+    cursor: pointer; }
+
+.research__item__dropdown-body {
+  display: none;
+  height: 0;
+  max-height: 0;
+  transition: height 300ms ease-in-out; }
+  .research__item__dropdown-body.expanded {
+    display: block;
+    height: auto;
+    max-height: 100%; }
+
 .header {
   text-align: center;
   background-color: #264559;

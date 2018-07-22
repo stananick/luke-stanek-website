@@ -12,3 +12,31 @@
     margin-bottom: 1.5rem;
   }
 }
+
+.research {
+
+  &__item {
+
+    &__dropdown-title {
+      text-decoration: underline;
+      color: $tertiary-color;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__dropdown-body {
+      display: none;
+      height: 0;
+      max-height: 0;
+      transition: height 300ms ease-in-out;
+
+      &.expanded {
+        display: block;
+        height: auto;
+        max-height: 100%;
+      }
+    }
+  }
+}
