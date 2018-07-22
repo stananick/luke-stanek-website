@@ -1,11 +1,25 @@
+.container {
+  margin: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  @include breakpoint-large {
+    margin: 0 7rem;
+  }
+}
+
 .section {
   margin: 0 1rem;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  
+  @include breakpoint-large {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+  }
 }
 
 .overview {
-  padding: 2rem 1rem 0 1rem;
+  padding-top: 2rem;
 
   &__image {
     border-radius: 10rem;
@@ -16,26 +30,38 @@
 .research {
 
   &__item {
+    margin: 1rem 0;
+
+    p {
+      padding: 0;
+    }
 
     &__dropdown-title {
-      text-decoration: underline;
       color: $tertiary-color;
 
       &:hover {
         cursor: pointer;
       }
+
+      span {
+        display: inline-block;
+        margin-left: 0.1rem;
+        transition: transform 100ms ease-in-out;
+
+        &.rotate {
+          transform: rotate(90deg);
+        }
+      }
     }
 
     &__dropdown-body {
-      display: none;
-      height: 0;
       max-height: 0;
-      transition: height 300ms ease-in-out;
+      padding: 0;
+      transition: max-height 400ms ease-in-out;
+      overflow: hidden;
 
       &.expanded {
-        display: block;
-        height: auto;
-        max-height: 100%;
+        max-height: 500px;
       }
     }
   }
