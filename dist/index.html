@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Lucas J. Stanek</title>
+    <meta name="description" content="TODO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
+</head>
+<body>
+
+  <header role="banner">
+    <section class="header">
+      <h1 class="header__title"><a href="#">Lucas J. Stanek <span>PhD Student, CMSE</span></a></h1>
+
+      <!-- TODO: make sticky -->
+      <nav id="menu" role="navigation">
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <!-- TODO: Inline CV -->
+          <li><a href="#cv">CV</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main role="main">
+
+  <section class="container">
+    <section class="section overview">
+      <img class="overview__image" src="img/luke-stanek.jpg" alt="Headshot of Lucas Stanek">
+
+      <p>I am currently a PhD student in the <a href="https://cmse.msu.edu">Department of Computational, Mathematics, Science, and Engineering</a> at Michigan State University. I am a research assistant in <a href="https://murillogroupmsu.com">Dr. Michael Murillo's laboratory</a> and my focus is in computational modeling with a focus on plasma physics.</p>
+
+      <p>Before coming to Michigan State university, I earned my bachelor's and master's degree in applied mathematics from The University of Akron in Akron, Ohio, which is also my hometown.</p>
+
+      <p>Some of my interests include: playing guitar, Cleveland Indians baseball, and camping/hiking. I also have a passion for teaching and helping students. I have taught many classes both at The University of Akron and MSU.</p>
+    </section>
+
+
+    <!-- RESEARCH SECTION -->
+
+    <section class="section" id="research">
+      <!-- <h2>Papers</h2> -->
+      <!-- <h2>Talks</h2> -->
+      <h2>Posters</h2>
+
+      <section class="research__item">
+        <p>Z Fundamental Science Program Workshop, Albuquerque, NM.<br>
+        <em>Molecular Dynamics &mdash; Hydrodynamics Hybrid Method for Non-Ideal Plasmas</em></p>
+        <p class="research__item__dropdown-title">Abstract <span>&rtrif;</span></p>
+        <p class="research__item__dropdown-body" aria-hidden="true">Starting from a multispecies Klimontovich description, we derive a hybrid method that models non-ideal plasmas. The model consists of coupled molecular dynamic (MD) and hydrodynamic equations of motion to govern the dynamics of the ion species and electrons respectively. With this model, we keep correlation information and is exact at describing the system until closures are added. Different closures allow for the modeling of phenomena such as heat conduction, or energy transfer between particles that would not be possible if simpler methods like Yukawa particles were employed. Unlike a pure MD model which requires a small timescale to resolve the dynamics of the fast moving electrons relative to the ion species, this model avoids small timescales making computation more tractable while retaining physics of interest.</p>
+      </section>
+
+      <section class="research__item">
+        <p>APS DPP/GEC Conference, Portland, OR.<br>
+        <em>Molecular Dynamics &mdash; Hydrodynamics Hybrid Method for Moderately Coupled Plasmas</em></p>
+        <p class="research__item__dropdown-title">Abstract <span>&rtrif;</span></p>
+        <p class="research__item__dropdown-body" aria-hidden="true">Starting from a multispecies Klimontovich description, we derive a hybrid method that models dense, moderately coupled plasmas. The model consists of coupled molecular dynamic (MD) and hydrodynamic equations of motion to govern the dynamics of the ion species and electrons respectively. With this model, we keep correlation information and is exact at describing the system until closures are added. Different closures allow for the modeling of phenomena such as heat conduction, or energy transfer between particles that would not be possible if simpler methods like Yukawa particles were employed. Unlike a pure MD model which requires a small timescale to resolve the dynamics of the fast moving electrons relative to the ion species, this model avoids small timescales making computation more tractable while retaining physics of interest. As a first test case, we aim to reproduce the dispersion relation for ultra-cold plasmas as presented in <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.92.013107">1</a>. As our first application, we will explore interface mixing where the usual pair potential is known to fail.</p>
+      </section>
+
+      <h2>Projects</h2>
+
+      <section class="research__item">
+        <p>Implicit Particle-In-Cell Method for Two Stream Instability, MSU Spring 2018</p>
+        <p class="research__item__dropdown-title">Description <span>&rtrif;</span></p>
+        <p class="research__item__dropdown-body" aria-hidden="true">A particle-in-cell code was written in Python to model the two stream instability that occurs in plasma physics. First, an explicit method was heavily optimized by writing the algorithm in such a way that the algorithmic complexity is minimized (10 times speedup) along with implementing state of the art Python optimization methods resulting in a 300 times speedup. The implementation of an implicit method and how it would further reduce the computation cost was discussed.</p>
+      </section>
+
+      <section class="research__item">
+        <p>Non-Equilibrium Molecular Dynamics: Shock Physics, MSU, Spring 2018</p>
+        <p class="research__item__dropdown-title">Description <span>&rtrif;</span></p>
+        <p class="research__item__dropdown-body" aria-hidden="true">A molecular dynamics model was implemented to study the behavior of a shockwave as it traveled through a domain of particles representing solid argon. The shockwave was created via piston and the model reports measurables of the system including temperature, pressure, and particle density. State of the art optimization methods in Python were implemented to obtain speed up on the order of $10^3$. The visualization software, Ovito was used to visualize the dynamics of the system as it evolves through time.</p>
+      </section>
+
+      <section class="research__item">
+        <p>Eigenvalue problems for Sturm-Liouville Equation, MSU, Fall 2017</p>
+        <p class="research__item__dropdown-title">Description <span>&rtrif;</span></p>
+        <p class="research__item__dropdown-body" aria-hidden="true">Numerical solutions to the 1D Sturm-Liouville spectrum problem were found by means of multiple eigenvalue solvers. The computational efficiency of each solver was studied and were then compared to the true solution to assess their order of convergence. A method was then designed to handle the generalized eigenvalue problem.</p>
+      </section>
+
+      <section class="research__item">
+        <p>Deformation of a Graphene Sheet Driven by Lattice Mismatch with a Supporting Substrate, The University of Akron, Spring 2017</p>
+        <p class="research__item__dropdown-title">Description <span>&rtrif;</span></p>
+        <p class="research__item__dropdown-body" aria-hidden="true"> Deformation of a chain of bonded particles interacting with a chain of particles on a rigid substrate via van der Waals interactions was studied via simulation. An equilibrium configuration of the system given an initial condition was found by means of gradient flow dynamics. This energy-based model provided insight on out-of-plane deformations and connections were made to lattice-constants and model parameters governing the strength of the force terms.</p>
+      </section>
+    </section>
+
+    <!-- TEACHING SECTION -->
+
+    <section class="section" id="teaching">
+      <h2>Courses Taught</h2>
+
+      <section class="research__item">
+        <p> Introduction to Computational Modeling (CMSE 201), Michigan State University, Fall '17 - Spring '18</p>
+        <p class="research__item__dropdown-title">Student Reviews <span>&rtrif;</span></p>
+        <p class="teaching__item__dropdown-body" aria-hidden="true">
+
+        <br><img src="img/201_reviews_s18.png" alt="CMSE 201 Reviews Spring 18" height="500" width="500"></br>
+
+        <br><b><u>Student responses to: "What are the strengths/weaknesses of your TA?"</u></b></br>
+        <br>-Luke is extremely nice and really too the time to explain things to us. He really tried to relate with the students on topics and tried to put things into our point of view to get us to understand. 10/10 would take a class if he was the TA.</br>
+        <br>-Great, helpful, passionate</br>
+        <br>-Very knowledgeable</br>
+        <br>-Strength was allowing to get help when needed. Weakness was understanding the material and explaining it as well as brutal grading.</br>
+        <br>-Very helpful and explained material well when I was confused.</br>
+        <br>-He had a strong understanding of the material and was able to effectively communicate both solutions and ways to fix problems with coding.</br>
+        <br>-He's good and always give suggestions to solve the problem.</br>
+        <br>-He was funny.</br>
+        <br>-I thought Luke did an exceptional job, you could tell he cared about the students progress and did a great job explaining anything you asked him. Made the course more enjoyable.</br>
+        <br>-No weaknesses. He answered questions in the best way possible, and he made himself available to help students regularly.</br>
+
+        <br><b><u>Responses to: "Do you have any suggestions for how your TA could have improved your experience in the course?"</u></b></br>
+        <br>-Just great</br>
+        <br>-No</br>
+        <br>-I do not</br>
+        <br>-improve grading and teaching style</br>
+        <br>-None</br>
+        <br>-None.</br>
+        <br>-no not really</br>
+        <br>-Nope</br>
+        <br>-No.</br>
+
+        </p>
+
+          <p class="research__item__dropdown-title">Created Content <span>&rtrif;</span></p>
+          <p class="teaching__item__dropdown-body" aria-hidden="true">
+          <br>Below are some videos that I created to act as refrence/teaching material for the "flipped classroom" model of CMSE 201.</br>
+          <br><iframe width="560" height="315" src="https://www.youtube.com/embed/5qzv8vZiCg8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></br>
+          <br><iframe width="560" height="315" src="https://www.youtube.com/embed/QteGO3E0tZg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></br>
+        </section>
+
+      <section class="research__item">
+          <p> Precalculus Mathematics (MTH 149), The University of Akron, Fall '16 - Spring '17</p>
+
+          <p class="research__item__dropdown-title">Student Reviews <span>&rtrif;</span></p>
+          <p class="teaching__item__dropdown-body" aria-hidden="true">
+
+          <br><img src="img/201_reviews_s18.png" alt="CMSE 201 Reviews Spring 18" height="500" width="500"></br>
+
+          <br><b><u>Student responses to: "What are the strengths/weaknesses of your TA?"</u></b></br>
+          <br>-Luke is extremely nice and really too the time to explain things to us. He really tried to relate with the students on topics and tried to put things into our point of view to get us to understand. 10/10 would take a class if he was the TA.</br>
+          <br>-Great, helpful, passionate</br>
+          <br>-Very knowledgeable</br>
+          <br>-Strength was allowing to get help when needed. Weakness was understanding the material and explaining it as well as brutal grading.</br>
+          <br>-Very helpful and explained material well when I was confused.</br>
+          <br>-He had a strong understanding of the material and was able to effectively communicate both solutions and ways to fix problems with coding.</br>
+          <br>-He's good and always give suggestions to solve the problem.</br>
+          <br>-He was funny.</br>
+          <br>-I thought Luke did an exceptional job, you could tell he cared about the students progress and did a great job explaining anything you asked him. Made the course more enjoyable.</br>
+          <br>-No weaknesses. He answered questions in the best way possible, and he made himself available to help students regularly.</br>
+
+          <br><b><u>Responses to: "Do you have any suggestions for how your TA could have improved your experience in the course?"</u></b></br>
+          <br>-Just great</br>
+          <br>-No</br>
+          <br>-I do not</br>
+          <br>-improve grading and teaching style</br>
+          <br>-None</br>
+          <br>-None.</br>
+          <br>-no not really</br>
+          <br>-Nope</br>
+          <br>-No.</br>
+
+          </p>
+
+          <p class="research__item__dropdown-title">Created Content <span>&rtrif;</span></p>
+          <p class="teaching__item__dropdown-body" aria-hidden="true">
+          <br>Below are some videos that I created to act as refrence/teaching material for the "flipped classroom" model of CMSE 201.</br>
+          <br><iframe width="560" height="315" src="https://www.youtube.com/embed/5qzv8vZiCg8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></br>
+          <br><iframe width="560" height="315" src="https://www.youtube.com/embed/QteGO3E0tZg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></br>
+
+        </section>
+
+    </section>
+
+    <!-- CV SECTION -->
+
+    <section class="section" id="cv">
+      <a href="pdf/lucas-stanek-cv.pdf">Download CV</a>
+
+      <!-- TODO: Inline CV -->
+    </section>
+  </section>
+
+</main>
+
+<footer>
+</footer>
+
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>

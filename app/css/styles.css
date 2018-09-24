@@ -71,6 +71,28 @@ ul {
     .research__item__dropdown-body.expanded {
       max-height: 500px; }
 
+.teaching__item {
+  margin: 1rem 0; }
+  .teaching__item p {
+    padding: 0; }
+  .teaching__item__dropdown-title {
+    color: #4392A3; }
+    .teaching__item__dropdown-title:hover {
+      cursor: pointer; }
+    .teaching__item__dropdown-title span {
+      display: inline-block;
+      margin-left: 0.1rem;
+      transition: transform 100ms ease-in-out; }
+      .teaching__item__dropdown-title span.rotate {
+        transform: rotate(90deg); }
+  .teaching__item__dropdown-body {
+    max-height: 0;
+    padding: 0;
+    transition: max-height 400ms ease-in-out;
+    overflow: hidden; }
+    .teaching__item__dropdown-body.expanded {
+      max-height: 1800px; }
+
 .header {
   text-align: center;
   background-color: #264559;
