@@ -10,7 +10,7 @@
 .section {
   margin: 0 1rem;
   padding: 1rem;
-  
+
   @include breakpoint-large {
     max-width: 48rem;
     margin: 0 auto;
@@ -26,6 +26,8 @@
     margin-bottom: 1.5rem;
   }
 }
+
+// Reserch Dropdown Section //
 
 .research {
 
@@ -62,6 +64,49 @@
 
       &.expanded {
         max-height: 500px;
+      }
+    }
+  }
+}
+
+
+// Teaching Dropdown Section //
+
+.teaching {
+
+  &__item {
+    margin: 1rem 0;
+
+    p {
+      padding: 0;
+    }
+
+    &__dropdown-title {
+      color: $tertiary-color;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      span {
+        display: inline-block;
+        margin-left: 0.1rem;
+        transition: transform 100ms ease-in-out;
+
+        &.rotate {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    &__dropdown-body {
+      max-height: 0;
+      padding: 0;
+      transition: max-height 400ms ease-in-out;
+      overflow: hidden;
+
+      &.expanded {
+        max-height: 1800px;
       }
     }
   }
