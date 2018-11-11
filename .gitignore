@@ -11,6 +11,5 @@ logs
 
 ### Local Env ###
 dist
-node_modules
 tmp
 assets
